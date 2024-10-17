@@ -1,0 +1,8 @@
+.CategoryPage {
+  border: 2px solid grey;
+  color: rgb(29, 29, 29);
+  background-color: rgb(134, 132, 132);
+  height: 1000px;
+  width: 420px;
+  border-radius: 10px;
+}

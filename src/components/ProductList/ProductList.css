@@ -1,0 +1,41 @@
+.ProductList {
+  border: 2px solid black;
+  background-color: rgb(134, 132, 132); /* Background color for the entire product list */
+  color: rgb(23, 23, 23);
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.product-list {
+  list-style-type: none;
+  padding: 0; /* Reset padding */
+  margin: 0; /* Reset margin */
+  display: grid; /* Use CSS Grid layout */
+  grid-template-columns: repeat(2, 1fr); /* Create two equal columns */
+  gap: 60px; /* Space between items */
+}
+
+.product-item {
+  display: flex;
+  align-items: flex-start;
+  border: 50px solid #4e4848; 
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgb(134, 132, 132); 
+}
+
+.product-image {
+  width: 200px;
+  height: 150px;
+  margin-right: 20px;
+}
+
+.product-title {
+  font-size: 28px;
+  font-weight: bold;
+}.ItemList{
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 5px;
+}
