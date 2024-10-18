@@ -16,6 +16,7 @@ order_product = db.Table('order_product',
 
 class User(db.Model, SerializerMixin):
     __tablename__ = 'users'
+    
     id = db.Column(db.Integer, primary_key=True)
     full_name = db.Column(db.String(100), nullable=False)
     email = db.Column(db.String(100), unique=True, nullable=False)
@@ -23,6 +24,7 @@ class User(db.Model, SerializerMixin):
     
 
     orders = db.relationship('Order', back_populates='user')
+    
 
     @validates('email')
     def validate_email(self, key, email):
@@ -100,6 +102,8 @@ class Order(db.Model, SerializerMixin):
     order_date = db.Column(db.DateTime, default=datetime.utcnow)
     products = db.relationship('Product', secondary=order_product, back_populates='orders')
     total_price = db.Column(db.Float, nullable=False)
+
+    user = db.relationship('User', back_populates='orders')
 
 
     @validates('user_id')
