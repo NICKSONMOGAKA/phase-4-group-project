@@ -136,7 +136,7 @@ class OrderResource(Resource):
         return make_response({"message": "Order successfully deleted"}, 200)
 
 
-# Add RESTful resource for User
+
 api.add_resource(UserResource, '/users', '/users/<int:id>')
 api.add_resource(ProductResource, '/products', '/products/<int:id>')
 api.add_resource(OrderResource, '/orders', '/orders/<int:id>')
