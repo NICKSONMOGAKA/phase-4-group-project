@@ -16,7 +16,7 @@ order_product = db.Table('order_product',
 
 class User(db.Model, SerializerMixin):
     __tablename__ = 'users'
-    
+
     id = db.Column(db.Integer, primary_key=True)
     full_name = db.Column(db.String(100), nullable=False)
     email = db.Column(db.String(100), unique=True, nullable=False)
@@ -24,6 +24,8 @@ class User(db.Model, SerializerMixin):
     
 
     orders = db.relationship('Order', back_populates='user')
+
+    serialize_rules = ("-orders.user",)
     
 
     @validates('email')
@@ -45,6 +47,13 @@ class User(db.Model, SerializerMixin):
             raise ValueError("Full name cannot be empty")
         return full_name
 
+    def to_dict(self):
+        return {
+            'id': self.id,
+            'full_name': self.full_name,
+            'email': self.email
+        }
+
     def __repr__(self):
         return f'<User {self.full_name}>'
 
@@ -62,6 +71,8 @@ class Product(db.Model, SerializerMixin):
     
 
     orders = db.relationship('Order', secondary=order_product, back_populates='products')
+
+    serialize_rules = ("-orders.products",)
 
 
     @validates('title')
@@ -89,6 +100,16 @@ class Product(db.Model, SerializerMixin):
             raise ValueError("Category cannot be empty")
         return category
 
+    def to_dict(self):
+        return {
+            'id': self.id,
+            'title': self.title,
+            'description': self.description,
+            'price': self.price,
+            'category': self.category,
+            'image_url': self.image_url
+        }
+
     def __repr__(self):
         return f'<Product {self.title}>'
 
@@ -105,6 +126,8 @@ class Order(db.Model, SerializerMixin):
 
     user = db.relationship('User', back_populates='orders')
 
+    serialize_rules = ("-user.orders", "-products.orders")
+
 
     @validates('user_id')
     def validate_user_id(self, key, user_id):
@@ -120,6 +143,14 @@ class Order(db.Model, SerializerMixin):
         return total_price
 
 
+    def to_dict(self):
+        return {
+            'id': self.id,
+            'user_id': self.user_id,
+            'order_date': self.order_date.isoformat(),
+            'total_price': self.total_price,
+            'products': [product.to_dict() for product in self.products]
+        }
 
     def __repr__(self):
         return f'<Order {self.id} - User: {self.user_id}>'
