@@ -24,16 +24,16 @@ const DisplayProductDetails = () => {
   };
 
   return (
-    <div className="ProductName">
+    <div className="ProductDetails">
       <div className="ProductDetails">
         <p>Title: {details.title}</p>
         <br />
         <p>Price: {details.price}</p><br/>
         <p>Description: {details.description}</p><br/>
         <p>Category: {details.category}</p><br/>
+        <img src={details.image_url} alt="product image"></img>
       </div>
       <div className="ProductImage">
-        <img src={details.image_url} alt="product image"></img>
         <button className="green"onClick={handlePurchaseClick}>Go to purchase</button>
         <button className="red"onClick={handleBack}>Back</button>
       </div>
