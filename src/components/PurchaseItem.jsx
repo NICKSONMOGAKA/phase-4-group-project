@@ -10,7 +10,7 @@ const PurchaseItem = ({ id }) => {
 
   useEffect(() => {
     const fetchDetails = () => {
-        fetch(`http://localhost:5500/products/${id}`)  
+        fetch(`https://phase-4-group-project-3.onrender.com/products/${id}`)  
             .then((res) => res.json())
             .then((data) => setProduct(data))
             .catch((error) => console.error("Error fetching product details:", error));
