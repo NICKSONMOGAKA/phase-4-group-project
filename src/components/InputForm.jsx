@@ -18,7 +18,7 @@ const InputForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch("https://fakestoreapi.com/products", {
+    fetch("http://127.0.0.1:5500/products", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -27,7 +27,7 @@ const InputForm = () => {
     })
       .then((response) => response.json())
       .then((data) => {
-        fetch("https://fakestoreapi.com/products", { 
+        fetch("http://127.0.0.1:5500/products", { 
             method: "POST",
             headers: {
               "Content-Type": "application/json",
