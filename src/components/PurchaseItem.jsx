@@ -10,7 +10,7 @@ const PurchaseItem = ({ id }) => {
 
   useEffect(() => {
     const fetchDetails = () => {
-        fetch(`http://localhost:5500/products/${id}`)  // Ensure the URL is correct
+        fetch(`http://localhost:5500/products/${id}`)  
             .then((res) => res.json())
             .then((data) => setProduct(data))
             .catch((error) => console.error("Error fetching product details:", error));

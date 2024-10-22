@@ -1,98 +1,89 @@
-
-##ShopEase Application
-
+## ShopEase Application
 
 ShopEase is a dynamic e-commerce platform that allows users to browse and purchase a diverse range of products. With a responsive user interface powered by React, customers can effortlessly explore product categories, view detailed descriptions, and complete purchases without any hassle. The addition of a Flask backend enhances data handling and improves performance, making for a seamless shopping experience.
-Technologies Used
 
-    Frontend:
-        React: Framework for building the user interface.
-        React Router: For managing navigation across different pages.
-        Fetch API: To retrieve product data from the Flask backend.
-        Vite: A modern build tool for faster development.
-        CSS & HTML: For styling and structuring the application.
+### Technologies Used
 
-    Backend:
-        Flask: A lightweight Python web framework for building the backend API.
-        SQLite (or another database): For storing product and user data.
+#### Frontend:
+- **React**: Framework for building the user interface.
+- **React Router**: For managing navigation across different pages.
+- **Fetch API**: To retrieve product data from the Flask backend.
+- **Vite**: A modern build tool for faster development.
+- **CSS & HTML**: For styling and structuring the application.
 
-##Main Features
+#### Backend:
+- **Flask**: A lightweight Python web framework for building the backend API.
+- **SQLite** (or another database): For storing product and user data.
 
-    Product Browsing: Users can explore products by category and filter items based on their interests.
-    Product Details: Detailed information for each product is readily available, including title, price, description, and category.
-    Seamless Navigation: Easy navigation between Home, About, Products, and Contact sections.
-    Purchase Functionality: Users can add items to their cart and enter account details to complete their purchases.
-    Responsive Footer: Includes essential links, social media icons, and a comment section for user feedback.
+### Main Features
 
-Getting Started
+- **Product Browsing**: Users can explore products by category and filter items based on their interests.
+- **Product Details**: Detailed information for each product is readily available, including title, price, description, and category.
+- **Seamless Navigation**: Easy navigation between Home, About, Products, and Contact sections.
+- **Purchase Functionality**: Users can add items to their cart and enter account details to complete their purchases.
+- **Responsive Footer**: Includes essential links, social media icons, and a comment section for user feedback.
 
-    Access the Repository:
-        Visit the GitHub repository: ShopEase GitHub Repository
+### Getting Started
 
-    Fork the Repository:
-        Click on "Fork" to create a personal copy of the project.
+#### Access the Repository:
+- Visit the GitHub repository: [ShopEase GitHub Repository](https://github.com/NICKSONMOGAKA/phase-2-group-project)
 
-    Clone the Repository:
-        Open your terminal and navigate to your desired directory using the cd command.
-        Clone the repository with:
+#### Fork the Repository:
+- Click on "Fork" to create a personal copy of the project.
 
-        bash
+#### Clone the Repository:
+- Open your terminal and navigate to your desired directory using the `cd` command.
+- Clone the repository with:
 
-    git clone git@github.com:NICKSONMOGAKA/phase-2-group-project.git
+bash
+git clone git@github.com:NICKSONMOGAKA/phase-2-group-project.git
 
-Open the Project:
+## Open the Project:
 
-    Navigate into the cloned directory and open it in your preferred text editor:
+Navigate into the cloned directory and open it in your preferred text editor:
 
     bash
-
     cd phase-2-group-project
     code .
 
-Install Dependencies:
+## Install Dependencies:
 
-    Run the following command to install required packages:
+Run the following command to install required packages:
 
     bash
-
     npm install
 
-Run the Application:
+## Run the Application:
 
-    Start the development server with:
+Start the development server with:
 
     bash
+    npm run dev
 
-        npm run dev
+Access the application in your web browser.
 
-        Access the application in your web browser.
+### Set Up the Backend:
+- Ensure that your Flask backend is running. Follow any setup instructions provided in the backend directory.
 
-    Set Up the Backend:
-        Ensure that your Flask backend is running. Follow any setup instructions provided in the backend directory.
+### How to Use the Application
 
-How to Use the Application
-Home Page:
+#### Home Page:
+- The home page introduces users to ShopEase, featuring promotional items and discounts.
 
-    The home page introduces users to ShopEase, featuring promotional items and discounts.
+#### Navigating to Products:
+- Click the "Products" link to view the available items.
+- Use the filter options to narrow down products by category.
 
-Navigating to Products:
+#### Viewing Product Details:
+- Click on a product to see its detailed information.
+- Navigate back to the list or proceed to purchase.
 
-    Click the "Products" link to view the available items.
-    Use the filter options to narrow down products by category.
+#### Making a Purchase:
+- Confirm product details on the purchase page and complete your transaction.
+- Fill in your account details and finalize your order.
 
-Viewing Product Details:
-
-    Click on a product to see its detailed information.
-    Navigate back to the list or proceed to purchase.
-
-Making a Purchase:
-
-    Confirm product details on the purchase page and complete your transaction.
-    Fill in your account details and finalize your order.
-
-Additional Pages:
-
-    About Page: Learn more about ShopEase and its mission.
-    Contact Page: Access contact information and a form for inquiries.
+#### Additional Pages:
+- **About Page**: Learn more about ShopEase and its mission.
+- **Contact Page**: Access contact information and a form for inquiries.
 
 Feel free to explore the code, suggest improvements, or contribute to the project! Your feedback is welcome.
