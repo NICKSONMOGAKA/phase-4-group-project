@@ -8,7 +8,7 @@ const DisplayProductDetails = () => {
 
   useEffect(() => {
     const fetchDetails = () => {
-      fetch(`http://127.0.0.1:5500/products/${id}`)
+      fetch(`https://phase-4-group-project-3.onrender.com/products/${id}`)
         .then((res) => res.json())
         .then((data) => setDetails(data));
     };

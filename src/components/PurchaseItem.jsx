@@ -19,7 +19,7 @@ const PurchaseItem = ({ id }) => {
   }, [id]);
 
   const handlePurchase = () => {
-    fetch("http://localhost:5500/orders", {
+    fetch("https://phase-4-group-project-3.onrender.com/orders", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
