@@ -8,7 +8,7 @@ const ProductList = ({ displayDetails }) => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("https://fakestoreapi.com/products")
+    fetch("http://127.0.0.1:5500/products")
       .then((response) => response.json())
       .then((data) => setProducts(data))
       .catch((error) => console.error("Error fetching products:", error));
