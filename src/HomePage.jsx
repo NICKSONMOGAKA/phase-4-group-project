@@ -19,14 +19,14 @@ function HomePage() {
         <h3 className='nav-link'>New Items on Sale 25% discount </h3>
         <div className="product-list">
         <div className='product'>
-            <img src="https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg"alt='tech'/>
+            <img src="https://media.istockphoto.com/id/1002544882/photo/a-white-computer-mouse-on-white-background-top-view-flat-lay-minimal-concept.webp?a=1&b=1&s=612x612&w=0&k=20&c=ItYKb4UBZjLHEVXzGDrcJ5h0hqCGlqnkqEcuwZBsUDA="alt='tech'/>
            </div>
           <div className="product">
-            <img src="https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg" alt="cloth 1" />
+            <img src="https://media.istockphoto.com/id/1246138278/photo/silver-metallic-white-wireless-headphones-in-the-air-isolated-on-white-background-music.webp?a=1&b=1&s=612x612&w=0&k=20&c=yaQ6l4WHU8cHGcfbybzI2z-k4OSnAj3WYjmbZrK1fcQ=" alt="headphones" />
           
           </div>
           <div className="product">
-            <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="laptop 1" />
+            <img src="https://media.istockphoto.com/id/1489867290/photo/many-tea-bags-in-wooden-box-and-leaves-on-light-green-background-closeup.webp?a=1&b=1&s=612x612&w=0&k=20&c=VhL4FN-wFuTwtFQOz2KFlhpPl3K3MMijXTb9kr-FXIg=" alt="groceries" />
             
           </div>
         </div>
