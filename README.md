@@ -1,60 +1,98 @@
-# ShopEase Application
 
-## Description
-ShopEase is an e-commerce application that allows users to browse and purchase a variety of products. The app features a responsive user interface where customers can view products by category, see detailed product descriptions, and make purchases seamlessly. The application is built using React, enabling dynamic content updates and a smooth user experience without page reloads.
+##ShopEase Application
+#Description
 
-## Technologies Needed
-- **React:** The main framework used to build the application.
-- **React Router:** For handling navigation between different pages.
-- **Fetch API:** To retrieve product data from a mock API.
-- **CSS:** For styling the application, including components like the navbar, footer, and product list.
-- **HTML:** Markup language for structuring the application.
-- **Vite:** This is the react version that was used to build this particular application
+ShopEase is a dynamic e-commerce platform that allows users to browse and purchase a diverse range of products. With a responsive user interface powered by React, customers can effortlessly explore product categories, view detailed descriptions, and complete purchases without any hassle. The addition of a Flask backend enhances data handling and improves performance, making for a seamless shopping experience.
+Technologies Used
 
-## Main Features
-- **Product Browsing:** Users can browse products by category, view all available items, and filter products based on their interests.
-- **Product Details:** Upon clicking on a product, detailed information such as title, price, description, and category is displayed.
-- **Seamless Navigation:** The application includes navigation between different pages such as Home, About, Products, and Contact, ensuring easy access to various sections.
-- **Purchase Functionality:** Users can proceed to purchase an item from the product details page. The user can also enter their account details before making a purchase.
-- **Responsive Footer:** The footer includes essential links, social media icons, and a comment section where users can leave feedback.
+    Frontend:
+        React: Framework for building the user interface.
+        React Router: For managing navigation across different pages.
+        Fetch API: To retrieve product data from the Flask backend.
+        Vite: A modern build tool for faster development.
+        CSS & HTML: For styling and structuring the application.
 
-## Getting Started
-1. Click on this link in order to access the github repository containing this project;
-[https://github.com/NICKSONMOGAKA/phase-2-group-project]
+    Backend:
+        Flask: A lightweight Python web framework for building the backend API.
+        SQLite (or another database): For storing product and user data.
 
-2. Click on fork and create a fork of the repository. 
+##Main Features
 
-3. Open your terminal and navigate into the directory where you would like to save the work using the `cd` command.
+    Product Browsing: Users can explore products by category and filter items based on their interests.
+    Product Details: Detailed information for each product is readily available, including title, price, description, and category.
+    Seamless Navigation: Easy navigation between Home, About, Products, and Contact sections.
+    Purchase Functionality: Users can add items to their cart and enter account details to complete their purchases.
+    Responsive Footer: Includes essential links, social media icons, and a comment section for user feedback.
 
-4. Feel free to copy and paste the following command in order to clone the repository into your local storage; 
-`git clone git@github.com:NICKSONMOGAKA/phase-2-group-project.git`
+Getting Started
 
-5. Navigate into the newly cloned folder and type in the `code .` command in order to open it on your text editor.
+    Access the Repository:
+        Visit the GitHub repository: ShopEase GitHub Repository
 
-6. To install all the required dependencies, you will have to run `npm install` in your terminal from the correct directory,
+    Fork the Repository:
+        Click on "Fork" to create a personal copy of the project.
 
-7. You can also view the application in your browser by running `npm run dev` from your terminal.
+    Clone the Repository:
+        Open your terminal and navigate to your desired directory using the cd command.
+        Clone the repository with:
 
-## How to Use the Application
+        bash
 
-### Home Page:
-- The home page welcomes users to ShopEase and showcases new items on sale with a 25% discount.
-- Users can navigate to different sections using the navbar links.
+    git clone git@github.com:NICKSONMOGAKA/phase-2-group-project.git
 
-### Navigating to Products:
-- Click on the "Products" link in the navbar to view a list of available products.
-- Use the dropdown menu to filter products by category.
-- Click on any product to view its details.
+Open the Project:
 
-### Viewing Product Details:
-- On the product details page, users can see information about the selected product.
-- Users can navigate back to the product list or proceed to purchase the item by clicking the "Go to purchase" button.
+    Navigate into the cloned directory and open it in your preferred text editor:
 
-### Making a Purchase:
-- On the purchase page, users can confirm the product details and make a purchase by clicking the "Purchase" button.
-- Once the user clicks this button, they are redirected to another page where they can fill out their account details and cash out.
+    bash
 
-### Additional Pages:
-- **About Page:** Provides information about the ShopEase platform.
-- **Contact Page:** Contains contact information and a form for users to reach out.
+    cd phase-2-group-project
+    code .
 
+Install Dependencies:
+
+    Run the following command to install required packages:
+
+    bash
+
+    npm install
+
+Run the Application:
+
+    Start the development server with:
+
+    bash
+
+        npm run dev
+
+        Access the application in your web browser.
+
+    Set Up the Backend:
+        Ensure that your Flask backend is running. Follow any setup instructions provided in the backend directory.
+
+How to Use the Application
+Home Page:
+
+    The home page introduces users to ShopEase, featuring promotional items and discounts.
+
+Navigating to Products:
+
+    Click the "Products" link to view the available items.
+    Use the filter options to narrow down products by category.
+
+Viewing Product Details:
+
+    Click on a product to see its detailed information.
+    Navigate back to the list or proceed to purchase.
+
+Making a Purchase:
+
+    Confirm product details on the purchase page and complete your transaction.
+    Fill in your account details and finalize your order.
+
+Additional Pages:
+
+    About Page: Learn more about ShopEase and its mission.
+    Contact Page: Access contact information and a form for inquiries.
+
+Feel free to explore the code, suggest improvements, or contribute to the project! Your feedback is welcome.
