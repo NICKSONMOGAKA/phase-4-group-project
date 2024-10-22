@@ -46,6 +46,7 @@ const PurchaseItem = ({ id }) => {
         <p>Price: {product.price}</p><br/>
         <p>Description: {product.description}</p><br/>
         <p>Category: {product.category}</p><br/>
+        <img src={product.image_url} alt="product image"></img>
       </div>
       <button className="green" onClick={handlePurchase}>Purchase</button>
       {message && <p>{message}</p>}
