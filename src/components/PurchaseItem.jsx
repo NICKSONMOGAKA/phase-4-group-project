@@ -10,10 +10,10 @@ const PurchaseItem = ({ id }) => {
 
   useEffect(() => {
     const fetchDetails = () => {
-
-        .then((res) => res.json())
-        .then((data) => setProduct(data))
-        .catch((error) => console.error("Error fetching product details:", error));
+        fetch(`http://localhost:5500/products/${id}`)  // Ensure the URL is correct
+            .then((res) => res.json())
+            .then((data) => setProduct(data))
+            .catch((error) => console.error("Error fetching product details:", error));
     };
     fetchDetails();
   }, [id]);
@@ -40,7 +40,6 @@ const PurchaseItem = ({ id }) => {
 
   return (
     <div className="ProductDetails">
-
       <button className="green" onClick={handlePurchase}>Purchase</button>
       {message && <p>{message}</p>}
       <button className="red" onClick={handleBack}>Back</button>
@@ -49,3 +48,4 @@ const PurchaseItem = ({ id }) => {
 };
 
 export default PurchaseItem;
+
