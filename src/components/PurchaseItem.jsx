@@ -41,11 +41,11 @@ const PurchaseItem = ({ id }) => {
   return (
     <div className="ProductDetails">
       <div className="ProductDetails">
-        <p>Title: {details.title}</p>
+        <p>Title: {product.title}</p>
         <br />
-        <p>Price: {details.price}</p><br/>
-        <p>Description: {details.description}</p><br/>
-        <p>Category: {details.category}</p><br/>
+        <p>Price: {product.price}</p><br/>
+        <p>Description: {product.description}</p><br/>
+        <p>Category: {product.category}</p><br/>
       </div>
       <button className="green" onClick={handlePurchase}>Purchase</button>
       {message && <p>{message}</p>}
