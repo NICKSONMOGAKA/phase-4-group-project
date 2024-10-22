@@ -8,7 +8,7 @@ const DisplayProductDetails = () => {
 
   useEffect(() => {
     const fetchDetails = () => {
-      fetch(`https://fakestoreapi.com/products/${id}`)
+      fetch(`http://127.0.0.1:5500/products/${id}`)
         .then((res) => res.json())
         .then((data) => setDetails(data));
     };
