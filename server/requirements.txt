@@ -17,3 +17,10 @@ flask-migrate
 flask_restful
 flask_jwt_extended
 flask_cors
+sqlalchemy-serializer
+Flask                             
+Flask-SQLAlchemy            
+SQLAlchemy                     
+python-dotenv           
+Werkzeug  
+werkzeug.security            
