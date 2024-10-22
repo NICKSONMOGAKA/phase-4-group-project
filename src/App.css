@@ -48,6 +48,7 @@
 }
 .ProductDetails {
   color: white;
+  text-align: center;
   font-style: italic;
   font-size: larger;
 }
@@ -79,7 +80,8 @@
 
 
 .form-box {
-  max-width: 300px;
+  margin-left: 35%;
+  max-width: 400px;
   background: #f1f7fe;
   overflow: hidden;
   border-radius: 16px;
@@ -141,4 +143,16 @@
 
 .form button:hover {
   background-color: #005ce6;
+}
+
+
+.ProductName {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  max-width: 500px;
+  border-radius: 16px;
 }

@@ -8,7 +8,7 @@ const DisplayProductDetails = () => {
 
   useEffect(() => {
     const fetchDetails = () => {
-      fetch(`https://fakestoreapi.com/products/${id}`)
+      fetch(`http://127.0.0.1:5500/products/${id}`)
         .then((res) => res.json())
         .then((data) => setDetails(data));
     };
@@ -33,7 +33,7 @@ const DisplayProductDetails = () => {
         <p>Category: {details.category}</p><br/>
       </div>
       <div className="ProductImage">
-        <img src={details.image} alt="product image"></img>
+        <img src={details.image_url} alt="product image"></img>
         <button className="green"onClick={handlePurchaseClick}>Go to purchase</button>
         <button className="red"onClick={handleBack}>Back</button>
       </div>

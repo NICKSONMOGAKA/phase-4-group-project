@@ -30,7 +30,7 @@ with app.app_context():
         description="A comfortable wireless mouse with ergonomic design.",
         price=25.99,
         category="Electronics",
-        image_url="https://media.istockphoto.com/id/1002544882/photo/a-white-computer-mouse-on-white-background-top-view-flat-lay-minimal-concept.webp?a=1&b=1&s=612x612&w=0&k=20&c=ItYKb4UBZjLHEVXzGDrcJ5h0hqCGlqnkqEcuwZBsUDA="
+        image_url="https://media.istockphoto.com/id/1002544882/photo/a-white-computer-mouse-on-white-background-top-view-flat-lay-minimal-concept.webp?a=1&b=1&s=612x612&w=0&k=20&c=ItYKb4UBZjLHEVXzGDrcJ5h0hqCGlqnkqEcuwZBsUDA=",
     )
     product2 = Product(
         title="Bluetooth Headphones",
