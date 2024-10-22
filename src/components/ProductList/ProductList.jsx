@@ -53,7 +53,7 @@ const ProductList = ({ displayDetails }) => {
           >
             <img
               className="product-image"
-              src={product.image}
+              src={product.image_url}
               alt={product.title}
             />
             <p>{product.title}</p>
