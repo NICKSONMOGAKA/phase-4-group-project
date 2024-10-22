@@ -8,7 +8,7 @@ const PurchaseItem = ({ id }) => {
 
   useEffect(() => {
     const fetchDetails = () => {
-      fetch(`https://fakestoreapi.com/products/${id}`)
+      fetch(`http://127.0.0.1:5500/products/${id}`)
         .then((res) => res.json())
         .then((data) => setProduct(data))
         .catch((error) => console.error("Error fetching product details:", error));
@@ -29,7 +29,7 @@ const PurchaseItem = ({ id }) => {
   return (
     <div className="ProductDetails">
       <p>Product: {product.title}</p><br/>
-      <img src={product.image} alt="product" />
+      <img src={product.image_url} alt="product" />
       <p>Price: ${product.price}</p><br/>
       {message && <p>{message}</p>}
       <button className="green" onClick={handlePurchase}>Purchase</button>
