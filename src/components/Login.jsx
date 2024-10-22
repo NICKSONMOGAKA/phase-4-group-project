@@ -18,7 +18,7 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch("http://localhost:5500/auth/login", {
+    fetch("https://phase-4-group-project-3.onrender.com/auth/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
