@@ -10,7 +10,7 @@ const PurchaseItem = ({ id }) => {
 
   useEffect(() => {
     const fetchDetails = () => {
-      fetch(`http://localhost:5500/products/${id}`)
+
         .then((res) => res.json())
         .then((data) => setProduct(data))
         .catch((error) => console.error("Error fetching product details:", error));
@@ -40,11 +40,7 @@ const PurchaseItem = ({ id }) => {
 
   return (
     <div className="ProductDetails">
-      <h2>{product.title}</h2>
-      <p>Price: ${product.price}</p>
-      <p>Description: {product.description}</p>
-      <p>Category: {product.category}</p>
-      <img src={product.image_url} alt="product" />
+
       <button className="green" onClick={handlePurchase}>Purchase</button>
       {message && <p>{message}</p>}
       <button className="red" onClick={handleBack}>Back</button>
