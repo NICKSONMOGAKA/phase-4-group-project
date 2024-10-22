@@ -14,3 +14,6 @@ virtualenv==20.26.3
 Werkzeug==3.0.4
 zipp==3.20.2
 flask-migrate
+flask_restful
+flask_jwt_extended
+flask_cors
