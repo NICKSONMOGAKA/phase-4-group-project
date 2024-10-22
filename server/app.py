@@ -10,7 +10,7 @@ from werkzeug.security import check_password_hash
 
 app = Flask(__name__)
 
-CORS(app, resources={r"/*": {"origins": "http://localhost:5173"}})
+CORS(app)
 
 
 app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///database.db"
