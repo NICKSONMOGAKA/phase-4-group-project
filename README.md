@@ -1,6 +1,6 @@
 
 ##ShopEase Application
-#Description
+
 
 ShopEase is a dynamic e-commerce platform that allows users to browse and purchase a diverse range of products. With a responsive user interface powered by React, customers can effortlessly explore product categories, view detailed descriptions, and complete purchases without any hassle. The addition of a Flask backend enhances data handling and improves performance, making for a seamless shopping experience.
 Technologies Used
