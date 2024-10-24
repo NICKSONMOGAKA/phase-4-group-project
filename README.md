@@ -70,6 +70,17 @@ Access the application in your web browser.
 #### Home Page:
 - The home page introduces users to ShopEase, featuring promotional items and discounts.
 
+#### Logging in
+- In order to make use of this application properly, you will have to log into a user account.
+- For this project, we have two users in the database namely Bob and Alice
+- Use the following login details to view and purchase products;
+      bob@example.com
+      securepassword
+
+- Alternatively you can make use of Alice's account;
+      alice@example.com
+      password123
+
 #### Navigating to Products:
 - Click the "Products" link to view the available items.
 - Use the filter options to narrow down products by category.
