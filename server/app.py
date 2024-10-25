@@ -26,23 +26,6 @@ db.init_app(app)
 api=Api(app)
 jwt = JWTManager(app)
 
-class LoginResource(Resource):
-    def post(self):
-        try:
-            data = request.get_json()
-            email = data.get('email')
-            password = data.get('password')
-            
-            user = User.query.filter_by(email=email).first()
-            if not user or not check_password_hash(user.password, password):
-                return make_response({"message": "Invalid email or password"}, 401)
-            
-            access_token = create_access_token(identity=user.id)
-            return make_response({"access_token": access_token}, 200)
-        except Exception as e:
-            print(f"Error during login: {str(e)}")
-            return make_response({"message": "Internal server error"}, 500)
-
 
 class SignupResource(Resource):
     def post(self):
@@ -65,6 +48,24 @@ class SignupResource(Resource):
             return make_response({"message": "User created successfully"}, 201)
         except Exception as e:
             print(f"Error during signup: {str(e)}")
+            return make_response({"message": "Internal server error"}, 500)
+
+
+class LoginResource(Resource):
+    def post(self):
+        try:
+            data = request.get_json()
+            email = data.get('email')
+            password = data.get('password')
+            
+            user = User.query.filter_by(email=email).first()
+            if not user or not check_password_hash(user.password, password):
+                return make_response({"message": "Invalid email or password"}, 401)
+            
+            access_token = create_access_token(identity=user.id)
+            return make_response({"access_token": access_token}, 200)
+        except Exception as e:
+            print(f"Error during login: {str(e)}")
             return make_response({"message": "Internal server error"}, 500)
 
 
@@ -220,6 +221,7 @@ api.add_resource(OrderResource, '/orders', '/orders/<int:id>')
 @app.route("/")
 def index():
     return "Welcome to flask"
+
 
 if __name__=='__main__':
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
