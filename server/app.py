@@ -91,7 +91,7 @@ class UserResource(Resource):
             return make_response({"message": "Email already exists"}, 400)
         
         hashed_password = generate_password_hash(password)
-        new_user = User(full_name=full_name, email=email, password=password)
+        new_user = User(full_name=full_name, email=email, password=hashed_password)
         db.session.add(new_user)
         db.session.commit()
         return make_response({"message": "User created successfully"}, 201)
