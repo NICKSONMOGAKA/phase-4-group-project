@@ -9,11 +9,10 @@ import Footer from "./Footer";
 import NavBar from "./components/NavBar";
 import About from './components/About';
 import Contact from './components/Contact';
-import InputForm from "./components/InputForm";
 import Login from "./components/Login";
 import { AuthProvider, useAuth } from "./components/AuthProvider";
 import { Navigate } from 'react-router-dom';
-import Signup from "./components/Signup";
+import Signup from "./components/SignUp";
 
 function App() {
   const [selectedProductId, setSelectedProductId] = useState(null);
