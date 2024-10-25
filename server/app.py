@@ -6,7 +6,7 @@ from flask_cors import CORS
 import os
 from datetime import timedelta
 from flask_jwt_extended import JWTManager, jwt_required, create_access_token
-from werkzeug.security import check_password_hash
+from werkzeug.security import check_password_hash, generate_password_hash
 from dotenv import load_dotenv
 import os
 
