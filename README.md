@@ -26,7 +26,7 @@ ShopEase is a dynamic e-commerce platform that allows users to browse and purcha
 ### Getting Started
 
 #### Access the Repository:
-- Visit the GitHub repository: [ShopEase GitHub Repository](https://github.com/NICKSONMOGAKA/phase-2-group-project)
+- Visit the GitHub repository: [ShopEase GitHub Repository](https://github.com/NICKSONMOGAKA/phase-4-group-project)
 
 #### Fork the Repository:
 - Click on "Fork" to create a personal copy of the project.
@@ -35,8 +35,8 @@ ShopEase is a dynamic e-commerce platform that allows users to browse and purcha
 - Open your terminal and navigate to your desired directory using the `cd` command.
 - Clone the repository with:
 
-bash
-git clone git@github.com:NICKSONMOGAKA/phase-2-group-project.git
+    bash
+    git clone git@github.com:NICKSONMOGAKA/phase-4-group-project.git
 
 ## Open the Project:
 
@@ -70,16 +70,6 @@ Access the application in your web browser.
 #### Home Page:
 - The home page introduces users to ShopEase, featuring promotional items and discounts.
 
-#### Logging in
-- In order to make use of this application properly, you will have to log into a user account.
-- For this project, we have two users in the database namely Bob and Alice
-- Use the following login details to view and purchase products;
-      bob@example.com
-      securepassword
-
-- Alternatively you can make use of Alice's account;
-      alice@example.com
-      password123
 
 #### Navigating to Products:
 - Click the "Products" link to view the available items.
