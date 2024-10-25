@@ -89,6 +89,7 @@ class UserResource(Resource):
         if User.query.filter_by(email=email).first():
             return make_response({"message": "Email already exists"}, 400)
         
+        hashed_password = generate_password_hash(password)
         new_user = User(full_name=full_name, email=email, password=password)
         db.session.add(new_user)
         db.session.commit()
