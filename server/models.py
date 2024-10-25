@@ -37,9 +37,9 @@ class User(db.Model, SerializerMixin):
 
     @validates('password')
     def validate_password(self, key, password):
-        if len(password) < 8:
-            raise ValueError("Password must be at least 8 characters long")
-        return generate_password_hash(password)
+        if len(password) < 5:
+            raise ValueError("Password must be at least 5 characters long")
+        return password
 
     @validates('full_name')
     def validate_full_name(self, key, full_name):
