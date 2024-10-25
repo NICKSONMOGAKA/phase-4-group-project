@@ -44,6 +44,30 @@ class LoginResource(Resource):
             return make_response({"message": "Internal server error"}, 500)
 
 
+class SignupResource(Resource):
+    def post(self):
+        try:
+            data = request.get_json()
+            full_name = data.get('full_name')
+            email = data.get('email')
+            password = data.get('password')
+
+            
+            if User.query.filter_by(email=email).first():
+                return make_response({"message": "Email already exists"}, 400)
+            
+            
+            hashed_password = generate_password_hash(password)
+            new_user = User(full_name=full_name, email=email, password=hashed_password)
+            db.session.add(new_user)
+            db.session.commit()
+            
+            return make_response({"message": "User created successfully"}, 201)
+        except Exception as e:
+            print(f"Error during signup: {str(e)}")
+            return make_response({"message": "Internal server error"}, 500)
+
+
 class UserResource(Resource):
     def get(self, id=None):
         if id:
@@ -61,7 +85,7 @@ class UserResource(Resource):
         email = data.get("email")
         password = data.get("password")
         
-        # Check if the email is already registered
+        
         if User.query.filter_by(email=email).first():
             return make_response({"message": "Email already exists"}, 400)
         
@@ -92,7 +116,7 @@ class UserResource(Resource):
         db.session.commit()
         return make_response(user.to_dict(), 200)
 
-# Add JWT authentication for products and orders if needed
+
 class ProductResource(Resource):
     def get(self, id=None):
         if id:
@@ -140,7 +164,7 @@ class ProductResource(Resource):
         db.session.commit()
         return make_response(product.to_dict(), 200)
 
-# Resource for handling orders
+
 class OrderResource(Resource):
     @jwt_required()
     def get(self, id=None):
@@ -187,6 +211,7 @@ class OrderResource(Resource):
 
 
 api.add_resource(LoginResource, '/auth/login')
+api.add_resource(SignupResource, '/auth/signup')
 api.add_resource(UserResource, '/users', '/users/<int:id>')
 api.add_resource(ProductResource, '/products', '/products/<int:id>')
 api.add_resource(OrderResource, '/orders', '/orders/<int:id>')

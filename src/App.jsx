@@ -13,6 +13,7 @@ import InputForm from "./components/InputForm";
 import Login from "./components/Login";
 import { AuthProvider, useAuth } from "./components/AuthProvider";
 import { Navigate } from 'react-router-dom';
+import Signup from "./components/Signup";
 
 function App() {
   const [selectedProductId, setSelectedProductId] = useState(null);
@@ -48,7 +49,7 @@ function App() {
             )
           }
         />
-        <Route path="/signup" element={<InputForm />} />
+        <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login onLogin={handleLogin} />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
