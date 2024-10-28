@@ -69,7 +69,7 @@ Access the application in your web browser.
 ### How to Use the Application
 
 #### Home Page:
-- The home page introduces users to ShopEase, featuring promotional items and discounts.
+- The home page introduces users to ShopEase, featuring promotional items and discount.
 
 
 #### Navigating to Products:
