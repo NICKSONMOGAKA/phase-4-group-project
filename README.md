@@ -88,3 +88,9 @@ Access the application in your web browser.
 - **Contact Page**: Access contact information and a form for inquiries.
 
 Feel free to explore the code, suggest improvements, or contribute to the project! Your feedback is welcome.
+
+#### Authors
+Brian Gwaro
+Nickson Mogaka
+Fardowsa Abdirahman
+Ian Mwangi
