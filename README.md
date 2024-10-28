@@ -36,7 +36,7 @@ ShopEase is a dynamic e-commerce platform that allows users to browse and purcha
 - Clone the repository with:
 
     bash
-    
+    git clone git@github.com:NICKSONMOGAKA/phase-4-group-project.git
 
 ## Open the Project:
 
