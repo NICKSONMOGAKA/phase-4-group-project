@@ -13,8 +13,8 @@ ShopEase is a dynamic e-commerce platform that allows users to browse and purcha
 - **CSS & HTML**: For styling and structuring the application.
 
 #### Backend:
-- **Flask**: A lightweight Python web framework for building the backend API .
-- **SQLite** (or another database): For storing product and user data .
+- **Flask**: A lightweight Python web framework for building the backend API.
+- **SQLite** (or another database): For storing product and user data.
 
 ### Main Features
 
