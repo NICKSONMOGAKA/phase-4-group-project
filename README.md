@@ -6,11 +6,11 @@ ShopEase is a dynamic e-commerce platform that allows users to browse and purcha
 
 
 #### Frontend:
-- **React**: Framework for building the user interface .
-- **React Router**: For managing navigation across different pages .
-- **Fetch API**: To retrieve product data from the Flask backend .
-- **Vite**: A modern build tool for faster development .
-- **CSS & HTML**: For styling and structuring the application .
+- **React**: Framework for building the user interface.
+- **React Router**: For managing navigation across different pages.
+- **Fetch API**: To retrieve product data from the Flask backend.
+- **Vite**: A modern build tool for faster development.
+- **CSS & HTML**: For styling and structuring the application.
 
 #### Backend:
 - **Flask**: A lightweight Python web framework for building the backend API.
@@ -19,7 +19,7 @@ ShopEase is a dynamic e-commerce platform that allows users to browse and purcha
 ### Main Features
 
 - **Product Browsing**: Users can explore products by category and filter items based on their interests.
-- **Product Details**: Detailed information for each product is readily available, including title, price, description, and category.
+- **Product Details**:  Detailed information for each product is readily available, including title, price, description, and category.
 - **Seamless Navigation**: Easy navigation between Home, About, Products, and Contact sections.
 - **Purchase Functionality**: Users can add items to their cart and enter account details to complete their purchases.
 - **Responsive Footer**: Includes essential links, social media icons, and a comment section for user feedback.
